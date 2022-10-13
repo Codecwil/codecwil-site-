@@ -1,0 +1,731 @@
+
+/* *************** START PROJECT_EAT **************/
+
+
+/*@import url('https://fonts.googlapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');*/
+
+/*        */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+p
+{
+    font-weight: 300;
+    color: #111;
+
+}
+
+body
+{
+    min-height: 1000px;
+}
+
+
+/* ---------- accueil--------      */
+
+.accueil{
+
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/img/giphy.gif);
+    background-size: cover;
+
+}
+.accueil .content
+{
+
+    max-width: 900px;
+    text-align: center;
+
+} 
+
+.accueil .content h2
+{
+    font-size: 5em;
+    color:  #fff;
+}
+
+.accueil .content p
+{
+    font-size: 1em;
+    color: #fff;
+}
+
+/*  --------- Button ---------    */
+
+.Button
+{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing:  2px;
+    transition: 0.5s;
+
+}
+
+.Button:hover
+{
+    letter-spacing: 6px;
+}
+
+/*  ---------- header  ---------   */
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+
+}
+
+header.sticky
+{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+
+}
+
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+
+} 
+
+header.sticky .logo
+{
+color: #111;
+}
+
+header .logo span
+{
+    color: #ff0157;
+}
+
+header .navigation
+{
+    position: relative;
+    display: flex;
+
+}
+
+header .navigation li 
+{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a 
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    
+
+}
+
+header.sticky .navigation li a
+{
+    color: #000;
+    
+}
+
+header.sticky .navigation li a:hover
+{
+    color: #ff0157;
+}
+
+/*  -----------  section ---------   */
+
+section
+{
+    padding: 100px;
+   
+}
+
+.prjtEatB{
+
+    background: #9e9a9a;
+    
+    
+}
+
+/* ***** RETURN BUTTON ******/
+
+div .project_eat_Back{ 
+    text-decoration: none;
+    color: aqua;
+}
+
+
+/* ***** RETURN BUTTON ******/
+
+.rangee
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rangee .col10
+{
+    position: relative;
+    width: 48%;
+}
+
+.titreTexte
+{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titreTexte span
+{
+    color: #ff0157;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.rangee .col10 .imgBox
+{
+    position: relative;
+    width: 100%;
+    /*min-height: 300PX;*/
+    height: 100%;
+}
+
+.rangee .col10 .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.titre 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*  --------- menu content ---------*/
+
+.menu .content
+{
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    display: flex;
+}
+
+.menu .content .box
+{
+    width: 350px;
+    border: 15px solid #fff;
+    margin: 30px;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+
+.menu .content .box .imgBox
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .content .box .imgBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .content .box .texte
+{
+    padding: 16px 0 6px;
+}
+
+.menu .content .box .texte h3
+{
+    font-size: 500;
+    color: #111;
+}
+
+/*  ---------  chefs content --------   */
+
+.chefs .content
+{
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    display: flex;
+}
+
+.chefs .content .box
+{
+    width: 250px;
+    margin: 15px;
+    
+}
+
+.chefs .content .box .imgBox
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    
+}
+
+.chefs .content .box .imgBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.chefs .content .box .texte
+{
+    padding: 16px 0 6px;
+}
+
+.chefs .content .box .texte h3
+{
+    font-size: 500;
+    color: #111;
+}
+
+/*  ---------  temoignages -------   */
+
+.temoignages
+{
+    background: url(img/img/backgd1.jpg);
+    background-size: cover;
+}
+
+.white .titreTexte,
+.white p
+{
+    color: #fff;
+}
+
+.temoignages .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+    
+}
+
+.temoignages .content .box
+{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.temoignages .content .box .imgBox
+{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.temoignages .content .box .imgBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.temoignages .content .box .texte
+{
+    text-align: center;
+}
+
+.temoignages .content .box text p
+{
+    color: #666;
+    font-style: inherit;
+    
+}
+
+
+.temoignages .content .box .texte h3
+{
+    font-size: 1em;
+    color: #111;
+    margin-top: 20px;
+    color: #ff0157;
+    font-weight: 600;
+}
+
+/*  ---------  contact  --------  */
+
+.contact
+{
+    background: url(img/img/backgd5.jpg);
+    background-size: cover;
+}
+
+.contactFrom
+{
+    padding: 70px 50px;
+    background: #fff;
+    box-shadow: 016px 50px rgba(0,0,0,0,01);
+    max-width: 500px;
+    margin-top: 50;
+    margin: 20px;
+}
+
+.contactFrom h3
+{
+    color: #111;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contactFrom .AjoutBok
+{
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contactFrom .AjoutBok input,
+.contactFrom .AjoutBok textarea
+{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-weight: 300;
+    font-size: 16px;
+    resize: none;
+}
+
+.contactFrom .AjoutBok input[type="submit"]
+{
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    
+}
+
+/*  --------  copyrighText  --------  */
+
+.copyrighText
+{
+    padding: 8px 40px;
+    border-top: 2px solid rgba(0,0,0,0,01);
+    text-align: center;
+}
+
+.copyrighText p
+{
+    color: #333;
+}
+
+.copyrighText a
+{
+    color: #ff0157;
+    font-weight: 500;
+    text-decoration: none;
+    
+}
+
+/*   -------- responsive ------    */
+
+@media (max-width: 991px)
+{
+    header,
+    header.sticky
+    {
+        padding: 10px 20px;
+    }
+
+    header .navigation
+    {
+        display: none;
+    }
+
+    header .navigation.active
+    {
+        width: 100%;
+        height: calc(30% - 68px);
+        /*height: calc(100% - 68px);*/
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+
+
+    }
+
+    header .navigation li 
+    {
+        
+        margin-left: 0;
+    }
+
+    header .navigation li a
+    {
+        color: #111;
+        font-size: 1.7em;
+    }
+
+
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(img/img/icon.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    
+    .menuToggle .active
+    {
+        background: url(img/img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    
+    header.sticky .menuToggle
+    {
+        filter: invert(1);
+    }
+
+    .section 
+    {
+        padding: 20px;
+    }
+
+    .accueil .content h2 {
+        font-size: 4em;
+        color: #fff;
+    }
+
+    .rangee
+    {
+        
+        flex-direction: column;
+    }
+
+    .rangee .col10
+    {
+        position: relative;
+        width: 100%;
+    }
+
+    .rangee .col10 .imgBox
+    {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .menu .content 
+    {
+        margin-top: 20px;
+    }
+
+    .menu .content .box 
+    {
+        margin: 10px;
+    }
+
+    .menu .content .box .imgBox
+     {
+       
+        height: 260px;
+    }
+
+    .titre 
+    {
+        text-align: center;
+    }
+
+    .titreTexte
+    {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        font-weight: 300;
+        line-height: 1.5em;
+        
+    }
+
+    .temoignages .content .box 
+    {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .contactFrom
+    {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+   
+}
+
+
+
+
+@media only screen and (max-width:500px) 
+{
+    section
+    {
+        padding: 20px;
+    }
+
+    .accueil {
+        
+        min-height: 10vh;
+    }
+
+    .accueil .content h2 {
+        font-size: 2.8em;
+        margin-top: 30px;
+    }
+
+    .rangee .col10 .imgBox 
+    {
+        
+        margin-bottom: 80px;
+    }
+
+    .Button {
+        font-size: 0.7em;
+    
+    }
+
+    header 
+    {
+        position: sticky;top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.5s;
+    }
+
+    header .navigation.active {
+        width: 63%;
+        height: calc(30% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        /*background: url(backgd1.jpg);*/
+    }
+
+    
+    header .navigation li a {
+        color: #111;
+        font-size: 1.7em;
+    }
+        
+
+
+
+}
+
+@media only screen and (max-width: 400px)
+{
+
+    header .navigation.active {
+        width: 100%; 
+        height: calc(30% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        /* background: url(backgd1.jpg); */
+    }
+
+}
